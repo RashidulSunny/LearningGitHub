@@ -39,7 +39,7 @@ public class HomePractice {
         driver.findElement(By.xpath("//span[contains(text(),'Hello, Sign in')]")).click();
         driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys("sunny09203019@gmail.com");
         driver.findElement(By.xpath("//input[@id='continue']")).click();
-        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Welcome2@2");
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Babuiii$1382020$");
         driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
 
 //3. searchIcon
