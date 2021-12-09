@@ -2,20 +2,17 @@ package api_test;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SimpleDeleteTest {
-    public static final Logger LOGGER = LogManager.getLogger(SimpleDeleteTest.class);
+public class SimpleDeleteTest extends BaseClassApiTest{
+
 
     @Test
     public void getSingleUser() {
-        LOGGER.info("----------------API Test: Delete Single User With Path Variables --------------");
+        LOGGER.info(testCaseName);
         //listed out end points
         RestAssured.baseURI = "https://reqres.in/api/users";
         //create request object to make the request
@@ -28,7 +25,7 @@ public class SimpleDeleteTest {
         Assert.assertEquals(response.getStatusCode(), 204);
 
 
-        LOGGER.info("---------End Test Case----------");
+        LOGGER.info(endTestCase);
 
     }
 }
